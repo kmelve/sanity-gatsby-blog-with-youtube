@@ -1,7 +1,9 @@
+import customEditor from './customEditor'
 export default {
   name: 'bodyPortableText',
   type: 'array',
   title: 'Post body',
+  inputComponent: customEditor,
   of: [
     {
       type: 'block',
