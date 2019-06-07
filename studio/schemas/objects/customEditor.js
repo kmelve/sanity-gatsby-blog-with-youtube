@@ -16,7 +16,7 @@ function handlePaste (input) {
   const text = event.clipboardData.getData('text/plain')
   // const json = event.clipboardData.getData('application/json')
   const youTube = text.match(/^(https?:\/\/)?(www\.youtube\.com|youtu\.?be)\/.+$/)
-  console.log('youTube', youTube)
+
   if (youTube) {
     const YouTubeBlock = [{
       _type: 'youtube',
